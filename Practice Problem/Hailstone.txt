@@ -1,0 +1,30 @@
+.global _start
+_start
+    mov r0, #5
+    bl hailstone
+    1 b 1b     Done
+
+.global hailstone
+hailstone
+		mov r1, #0
+        mov r2, r0
+        mov	r0, #0
+check	and	r4, r2, #1
+		cmp r4, #1
+		beq	odd
+        b	even
+odd	add r3, r2, r2
+		add	r3, r3, r2
+        add r3, r3, #1
+        add	r0, r0, #1
+        mov	r2, r3
+        cmp	r2, #1
+        beq	end
+        b	check
+even	lsr r2, r2, #1
+		add	r0, r0, #1
+        cmp r2, #1
+        beq	end
+        b	check
+end	b	end
+.end

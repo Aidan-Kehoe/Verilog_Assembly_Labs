@@ -1,0 +1,29 @@
+# do Part1.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:52:36 on Oct 31,2016
+# vlog -work work Part1.vo 
+# -- Compiling module Part1
+# 
+# Top level modules:
+# 	Part1
+# End time: 21:52:36 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:52:36 on Oct 31,2016
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Part1_vlg_vec_tst
+# 
+# Top level modules:
+# 	Part1_vlg_vec_tst
+# End time: 21:52:36 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Part1_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 21:52:36 on Oct 31,2016
+# Loading work.Part1_vlg_vec_tst
+# Loading work.Part1
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Note: $finish    : Waveform.vwf.vt(47)
+#    Time: 25600 ns  Iteration: 0  Instance: /Part1_vlg_vec_tst
+# End time: 21:52:37 on Oct 31,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,8 @@
+module fulladder(x, y, carry_in, sum, carry_out);
+	input x;
+	input y;
+	input carry_in;
+	output sum;
+	output carry_out;
+	
+	assign {carry_out, sum} = carry_in + y + x;s

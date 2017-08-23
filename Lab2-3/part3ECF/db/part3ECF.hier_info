@@ -1,0 +1,27 @@
+|part3ECF
+SW[0] => M.IN0
+SW[1] => M.IN0
+SW[2] => M.IN1
+SW[3] => M.IN1
+SW[4] => M.IN1
+SW[5] => M.IN1
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => M.IN0
+SW[8] => M.IN0
+SW[9] => M.IN1
+SW[9] => M.IN1
+SW[9] => M.IN1
+SW[9] => M.IN1
+LEDR[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+

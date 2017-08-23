@@ -1,0 +1,9 @@
+module part2(SW, LEDR);
+	input [0:9] SW
+	output [0:3] LEDR;
+	
+	wire s;
+	wire [0:3] M, X, Y;
+	assign  = SW[];
+	assign  = SW[];
+	assign  = SW[];

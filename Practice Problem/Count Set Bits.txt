@@ -1,0 +1,21 @@
+.global _start
+_start:
+    	mov r0, #255
+        mov r4, #0
+    	and r1, r0, #1
+        cmp r1, #1
+        beq	add
+        bl	loop
+loop:	lsr r2, r0, #1
+    	cmp r2, #0
+    	beq end
+		and r3, r2, #1
+        mov r0, r2
+        cmp r3, #1
+        beq add
+        bl 	loop
+add:	add r4, #1
+		mov r3, #0
+		bl loop
+end:	B 	end
+.end

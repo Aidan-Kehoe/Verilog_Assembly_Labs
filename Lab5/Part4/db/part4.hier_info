@@ -1,0 +1,178 @@
+|part4
+SW[0] => clear.IN1
+SW[1] => enable.IN1
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY[0] => clock.IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+HEX3[6] <= hdisp:H3.port1
+HEX3[5] <= hdisp:H3.port1
+HEX3[4] <= hdisp:H3.port1
+HEX3[3] <= hdisp:H3.port1
+HEX3[2] <= hdisp:H3.port1
+HEX3[1] <= hdisp:H3.port1
+HEX3[0] <= hdisp:H3.port1
+HEX2[6] <= hdisp:H2.port1
+HEX2[5] <= hdisp:H2.port1
+HEX2[4] <= hdisp:H2.port1
+HEX2[3] <= hdisp:H2.port1
+HEX2[2] <= hdisp:H2.port1
+HEX2[1] <= hdisp:H2.port1
+HEX2[0] <= hdisp:H2.port1
+HEX1[6] <= hdisp:H1.port1
+HEX1[5] <= hdisp:H1.port1
+HEX1[4] <= hdisp:H1.port1
+HEX1[3] <= hdisp:H1.port1
+HEX1[2] <= hdisp:H1.port1
+HEX1[1] <= hdisp:H1.port1
+HEX1[0] <= hdisp:H1.port1
+HEX0[6] <= hdisp:H0.port1
+HEX0[5] <= hdisp:H0.port1
+HEX0[4] <= hdisp:H0.port1
+HEX0[3] <= hdisp:H0.port1
+HEX0[2] <= hdisp:H0.port1
+HEX0[1] <= hdisp:H0.port1
+HEX0[0] <= hdisp:H0.port1
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|part4|shiftn:S1
+Resetn => Q[15]~reg0.ACLR
+Resetn => Q[14]~reg0.ACLR
+Resetn => Q[13]~reg0.ACLR
+Resetn => Q[12]~reg0.ACLR
+Resetn => Q[11]~reg0.ACLR
+Resetn => Q[10]~reg0.ACLR
+Resetn => Q[9]~reg0.ACLR
+Resetn => Q[8]~reg0.ACLR
+Resetn => Q[7]~reg0.ACLR
+Resetn => Q[6]~reg0.ACLR
+Resetn => Q[5]~reg0.ACLR
+Resetn => Q[4]~reg0.ACLR
+Resetn => Q[3]~reg0.ACLR
+Resetn => Q[2]~reg0.ACLR
+Resetn => Q[1]~reg0.ACLR
+Resetn => Q[0]~reg0.ACLR
+enable => Q[15]~reg0.ENA
+enable => Q[0]~reg0.ENA
+enable => Q[1]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[4]~reg0.ENA
+enable => Q[5]~reg0.ENA
+enable => Q[6]~reg0.ENA
+enable => Q[7]~reg0.ENA
+enable => Q[8]~reg0.ENA
+enable => Q[9]~reg0.ENA
+enable => Q[10]~reg0.ENA
+enable => Q[11]~reg0.ENA
+enable => Q[12]~reg0.ENA
+enable => Q[13]~reg0.ENA
+enable => Q[14]~reg0.ENA
+clock => Q[15]~reg0.CLK
+clock => Q[14]~reg0.CLK
+clock => Q[13]~reg0.CLK
+clock => Q[12]~reg0.CLK
+clock => Q[11]~reg0.CLK
+clock => Q[10]~reg0.CLK
+clock => Q[9]~reg0.CLK
+clock => Q[8]~reg0.CLK
+clock => Q[7]~reg0.CLK
+clock => Q[6]~reg0.CLK
+clock => Q[5]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[0]~reg0.CLK
+Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|hdisp:H0
+c[0] => Decoder0.IN3
+c[1] => Decoder0.IN2
+c[2] => Decoder0.IN1
+c[3] => Decoder0.IN0
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|hdisp:H1
+c[0] => Decoder0.IN3
+c[1] => Decoder0.IN2
+c[2] => Decoder0.IN1
+c[3] => Decoder0.IN0
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|hdisp:H2
+c[0] => Decoder0.IN3
+c[1] => Decoder0.IN2
+c[2] => Decoder0.IN1
+c[3] => Decoder0.IN0
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|hdisp:H3
+c[0] => Decoder0.IN3
+c[1] => Decoder0.IN2
+c[2] => Decoder0.IN1
+c[3] => Decoder0.IN0
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

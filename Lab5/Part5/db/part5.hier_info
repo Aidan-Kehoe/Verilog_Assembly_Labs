@@ -1,0 +1,160 @@
+|part5
+CLOCK_50 => CLOCK_50.IN5
+HEX0[6] <= hdisp:H1.port1
+HEX0[5] <= hdisp:H1.port1
+HEX0[4] <= hdisp:H1.port1
+HEX0[3] <= hdisp:H1.port1
+HEX0[2] <= hdisp:H1.port1
+HEX0[1] <= hdisp:H1.port1
+HEX0[0] <= hdisp:H1.port1
+
+
+|part5|nbit_counter:U1
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= count[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[9] <= count[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[10] <= count[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[11] <= count[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[12] <= count[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[13] <= count[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[14] <= count[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[15] <= count[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[16] <= count[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[17] <= count[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[18] <= count[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[19] <= count[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[20] <= count[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[21] <= count[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[22] <= count[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[23] <= count[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[24] <= count[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[25] <= count[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock => count[0]~reg0.CLK
+clock => count[1]~reg0.CLK
+clock => count[2]~reg0.CLK
+clock => count[3]~reg0.CLK
+clock => count[4]~reg0.CLK
+clock => count[5]~reg0.CLK
+clock => count[6]~reg0.CLK
+clock => count[7]~reg0.CLK
+clock => count[8]~reg0.CLK
+clock => count[9]~reg0.CLK
+clock => count[10]~reg0.CLK
+clock => count[11]~reg0.CLK
+clock => count[12]~reg0.CLK
+clock => count[13]~reg0.CLK
+clock => count[14]~reg0.CLK
+clock => count[15]~reg0.CLK
+clock => count[16]~reg0.CLK
+clock => count[17]~reg0.CLK
+clock => count[18]~reg0.CLK
+clock => count[19]~reg0.CLK
+clock => count[20]~reg0.CLK
+clock => count[21]~reg0.CLK
+clock => count[22]~reg0.CLK
+clock => count[23]~reg0.CLK
+clock => count[24]~reg0.CLK
+clock => count[25]~reg0.CLK
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+Resetn => count.OUTPUTSELECT
+
+
+|part5|T_FF:T1
+T => q.OUTPUTSELECT
+clock => q~reg0.CLK
+Resetn => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|T_FF:T2
+T => q.OUTPUTSELECT
+clock => q~reg0.CLK
+Resetn => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|T_FF:T3
+T => q.OUTPUTSELECT
+clock => q~reg0.CLK
+Resetn => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|T_FF:T4
+T => q.OUTPUTSELECT
+clock => q~reg0.CLK
+Resetn => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|hdisp:H1
+s[3] => hex.IN0
+s[3] => hex.IN0
+s[3] => hex.IN0
+s[3] => hex.IN0
+s[2] => hex.IN1
+s[2] => hex.IN1
+s[2] => hex.IN1
+s[2] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[1] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+s[0] => hex.IN1
+hex[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,26 @@
+module part3(T, Clock, Clear, Q);
+	input T, Clock, Clear;
+	output Q;
+	wire Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8;
+	
+	T_flip (T, Clock, Clear, Q1);
+	T_Flip(T & Q1, Clock, Clear, Q2);
+	T_Flip(T & Q1 & Q2, Clock, Clear, Q3);
+	T_Flip(T & Q1 & Q2 & Q3, Clock, Clear, Q4);
+	T_Flip(T & Q1 & Q2 & Q3 & Q4, Clock, Clear, Q5);
+	T_Flip(T & Q1 & Q2 & Q3 & Q4 & Q5, Clock, Clear, Q6);
+	T_Flip(T & Q1 & Q2 & Q3 & Q4 & Q5 & Q6, Clock, Clear, Q7);
+	T_Flip(T & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7, Clock, Clear, Q8);
+	assign Q8 = Q;
+	
+module T_flip(t, clk, clr, q);
+
+	input t, clk, clr;
+	output reg q;
+	
+	always @(posedge clk, negedge clr)
+		if (~clr)
+			q <= 1'b0
+		else
+			q <= t;
+endmodule

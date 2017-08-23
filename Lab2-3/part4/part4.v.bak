@@ -1,0 +1,14 @@
+module part4 (SW, HEX0);
+	input c1, c0;
+	output [0:6] HEX0;
+	
+	assign HEX0[0] = ~c1 & c0;
+	assign HEX0[1] = ~c0;
+	assign HEX0[2] = ~c0;
+	assign HEXO[3] = ~c1;
+	assign HEX0[4] = ~c1;
+	assign HEX0[5] = ~c1 & c0;
+	assign HEX0[6] = ~c1;
+
+endmodule
+	

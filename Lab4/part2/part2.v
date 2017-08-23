@@ -1,0 +1,12 @@
+module part2(SW, HEX0, HEX1);
+	input [3:0] SW;
+	output [6:0] HEX0;
+	output [6:0] HEX1;
+	assign HEX0[0] = A + C + (B&D) + (~B&~D);
+	assign HEX0[1] = ~B + (~C&~D) + (C&D);
+	assign HEX0[2] = B + ~C + D;
+	assign HEX0[3] = (~B&~D) + (C&~D) + (B&~C&D) + (~B&C) + A;
+	assign HEX0[4] = (~B&~D) + (C&~D);
+	assign HEX0[5] = A + (~C&~D) + (B&~C) + (B&~D);
+	assign HEX0[6] = A + (B&~C) + (~B&C) + (C&~D);
+endmodule;

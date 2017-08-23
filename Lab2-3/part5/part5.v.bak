@@ -1,0 +1,6 @@
+module part5 (SW, LEDR, HEX0);
+endmodule
+
+module mux_2bit_3to1_1(S,U,V,W,M);
+	input [1:0]S,U,V,W;
+	output [1:0]M;
